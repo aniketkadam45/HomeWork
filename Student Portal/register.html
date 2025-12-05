@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Yourself</title>
+    <link rel="icon" href="png.png">
+</head>
+<body style="background-color: rgb(220, 244, 244);">
+    <br><br>
+    <nav style="display: flex; justify-content: center; gap: 9%;">
+        <a href="index.html"><h2>Home</h2></a>
+        <a href="students.html"><h2>Student List</h2></a>
+        <a href="register.html"><h2>Register</h2></a>
+        <a href="contact.html"><h2>Contact</h2></a> 
+    </nav>
+    <br>
+    <hr>
+    <br>
+    <div style="width: 50%; margin: auto;">
+    <form action="index.html" method="post">
+    <h1>Registration Form</h1>
+    <hr>
+    <br></br>
+    <label for="name"> Name :</label>
+    <input type="text" required>
+    <br></br>
+    <label for="email"> Email :</label>
+    <input type="email" required>
+    <br></br>
+    <label for="mobile"> Mobile Number :</label>
+    <input type="tel" required>
+    <br><br>
+    <label for="dob"> DOB :</label>
+    <input type="date" required>
+    <br><br>
+    <label for="gender"> Gender :</label>
+    <label>
+        <input type="radio" value="male">
+        Male
+    </label>
+    <label for="">
+        <input type="radio" value="female">
+        Female
+    </label>
+    <br><br>
+    <label for="course"> Course :</label>
+    <select name="course">
+        <option value="">Select a Course</option>
+        <option value="">Java</option>
+        <option value="">Web Develpoment</option>
+        <option value="">Python</option>
+    </select>
+    <br><br>
+    <label for="hobbies"> Hobbies :</label>
+    <label for="music">
+        <input type="checkbox">
+        Listning Music
+    </label>
+    <label for="play">
+        <input type="checkbox">
+        Playing Cricket
+    </label>
+
+    <label for="read">
+        <input type="checkbox">
+        Reading Books
+    </label>
+    <br><br>
+    <label for="address">
+        Address :
+    </label>
+    <textarea name="address" id=""></textarea>
+    
+    <br><br>
+    <label for="password"> Password :</label>
+    <input type="password" required>
+    <br><br>
+    <button type="submit">
+        Submit
+    </button>
+    <button type="reset">Reset</button>
+    </form>
+    </div>
+</body>
+</html>
