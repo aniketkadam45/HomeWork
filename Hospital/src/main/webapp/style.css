@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.form-group input,
+.form-group select {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.6);
+}
+
+.form-group label {
+    width: 100%;
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00c6ff, #4facfe);
+    transform: scale(1.02);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    width: 450px;
+}
+
+.checkmark {
+    font-size: 60px;
+    color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: #2ecc71;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+.btn.secondary {
+    background: #3498db;
+}
+
+.btn.secondary:hover {
+    background: #2980b9;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    width: 450px;
+}
+
+.error-icon {
+    font-size: 60px;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: #e74c3c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+.btn.secondary {
+    background: #95a5a6;
+}
+
+.btn.secondary:hover {
+    background: #7f8c8d;
+}
