@@ -93,10 +93,29 @@ public class EmployeeDao {
 		for(int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
-	
+		tr.commit();
+		ss.close();
+	}
 
+	public void getSingleData(int id) {
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate.cfg.xml");
+		cfg.addAnnotatedClass(Employee.class);
+
+		SessionFactory sf = cfg.buildSessionFactory();
+		Session ss = sf.openSession();
+		Transaction tr = ss.beginTransaction();
+
+		String query = "from Employee where id = :id";
+		Query<Employee> q = ss.createQuery(query, Employee.class);
+
+		q.setParameter("id", id);
+
+		Employee e = q.uniqueResult();
+		System.out.println(e);
 
 		tr.commit();
 		ss.close();
 	}
 }
+
