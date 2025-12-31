@@ -22,4 +22,10 @@ public class EmployeeService {
 		EmployeeDao ed = new EmployeeDao();
 		ed.getAllData();
 	}
+
+	public void getSingleData(int id) {
+		EmployeeDao ed = new EmployeeDao();
+		ed.getSingleData(id);
+	}
 }
+
