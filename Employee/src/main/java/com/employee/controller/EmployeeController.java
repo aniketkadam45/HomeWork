@@ -55,14 +55,57 @@ public class EmployeeController {
 		es.getAllData();
 	}
 
+	public void getSingleData(int id) { 
+        es.getSingleData(id);
+    }
+
 	public static void main(String[] args) {
 
 		EmployeeController ec = new EmployeeController();
-		
-//		ec.insert();
-//		ec.update();
-//		ec.delete();
-		ec.getAllData();
+		 Scanner sc = new Scanner(System.in);
 
+        int choice;
+
+        
+        do { 
+            System.out.println("\nChoose an operation:");
+            System.out.println("1. Insert");
+            System.out.println("2. Update");
+            System.out.println("3. Delete");
+            System.out.println("4. Get All Data");
+            System.out.println("5. Get Single Data");
+            System.out.println("6. Exit"); 
+
+            choice = sc.nextInt();
+            sc.nextLine(); 
+
+            switch (choice) {
+                case 1:
+                    ec.insert();
+                    break;
+                case 2:
+                    ec.update();
+                    break;
+                case 3:
+                    ec.delete();
+                    break;
+                case 4:
+                    ec.getAllData();
+                    break;
+                case 5:
+                    System.out.println("Enter ID:");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+                    ec.getSingleData(id);
+                    break;
+                case 6: // exit option
+                    System.out.println("Exiting program...");
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+            }
+
+        } while (choice != 6);
 	}
 }
+
