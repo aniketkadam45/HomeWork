@@ -6,7 +6,6 @@ import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import com.springboot.student.entity.Student;
 
 @Repository
@@ -22,8 +21,8 @@ public class StudentDao {
 		Transaction tr = session.beginTransaction();
 
 		session.persist(s);
-
 		tr.commit();
+		
 		session.close();
 
 		return "Data is inserted ... !";
